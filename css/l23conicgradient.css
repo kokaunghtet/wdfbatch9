@@ -1,0 +1,165 @@
+*{
+	font-family: Arial;
+	outline: 1px dashed red;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+	width: 200px;
+	height: 200px;
+	background-color: firebrick;
+	border-radius: 100%;  /* 50%  */
+}
+
+.circle1{
+	background:conic-gradient(
+		red,
+		yellowgreen,
+		green,
+		blue
+	) ;
+}
+
+.circle2{
+	background: conic-gradient(
+		#4A55A2,
+		#C5DFF8,
+		#6527BE,
+		#F2EAD3
+	);
+}
+
+.circle3{
+	background: conic-gradient(
+		rgba(245, 40, 145, 0.8),
+		rgba(97, 40, 145, 0.8),
+		rgba(97, 171, 145, 0.8),
+		rgba(97, 205, 255, 1)
+	);
+}
+
+.circle4{
+	background:conic-gradient(
+		hsla(145, 100%, 50%, 1),
+		hsla(199, 62%, 50%, 1),
+		hsla(291, 62%, 50%, 1),
+		hsla(54, 62%, 50%, 1)
+	);
+}
+
+/*can't use deg in circle*/
+/*can only use in linear-gradient*/
+
+.circle5{
+	background: conic-gradient(
+		red 0% 25%,
+		blue 0% 50%,
+		green 0% 75%,
+		yellow 0% 100%
+	);
+}
+
+.circle6{
+	background-image: conic-gradient(
+		red 25%,
+		blue 50%,
+		green 75%,
+		yellow 100%
+	);
+}
+
+.boxOne{
+	width: 600px;
+	height: 300px;
+	background-color: green;
+
+/*	display: flex;
+	justify-content: center;
+	align-items: center;*/
+
+	display: grid;
+	place-items: center;
+
+	position: relative;
+}
+
+.boxOne .div1{
+	width: 300px;
+	height: 300px;
+	background-color: #000;
+	border-radius: 50%;		/* 100% */
+
+/*	position: absolute;
+	left: 0;
+	top: 0;*/
+	z-index: 1;
+
+	position: absolute;
+}
+
+.boxOne .div2{
+	width: 310px;
+	height: 310px;
+/*	background-color: orange;*/
+/*	background: linear-gradient(red, orange);*/
+	background: conic-gradient(
+		red,
+		orange 30%,
+		red 0%,
+		yellow 70%, 
+		red 0%,
+		violet 
+	);
+	border-radius: 50%;		/* 100% */
+
+/*	position: absolute;
+	left: 0;
+	top: 0;*/
+	z-index: 0;
+
+	position:absolute;
+}
+
+.pointerContainer{
+	width: 20px;
+	height: 200px;
+	background-color: transparent;
+
+	position: absolute;
+	top: -50px;
+	z-index: 2;
+
+	animation-name: animation; 
+	animation-duration: 3s;
+	
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	transform-origin: bottom;
+/*	transform-origin: center;*/
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 50%;
+
+	display: block;
+}
+
+@keyframes animation{
+	/*from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}*/
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}

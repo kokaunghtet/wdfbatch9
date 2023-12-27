@@ -1,0 +1,83 @@
+/* 12 july */
+
+*{
+	font-family: Arial;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.div1{
+	width: 600px;
+	height: 200px;
+	margin: 20px;
+
+/*		top/bottom left/right*/
+/*	margin: 10px 20px;*/
+	
+/*			top  right bottom left*/
+/*	margin: 10px 20px 30px 25px;*/
+	
+/*	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;*/
+
+	background-color: orange;
+}
+
+.div2{
+	width: 600px;
+	height: 200px;
+	margin: 20px;
+
+	background-color: orange;
+}
+
+.div2 .bank{
+	background-color: #013220;
+	color: #fff;
+
+	display: block;
+}
+
+.div2 .coin {
+	background-color: #013220;
+	color: #fff;
+
+	display: block;
+}
+
+.display1{
+	width: 300px;
+	height: 100px;
+
+	background-color: silver;
+	border: 2px solid orange;
+
+/*	Element true Spacing flase*/
+/* 	0 to 1 */
+/*	opacity: 0; */
+
+/*	Element true Spacing flase*/
+/*	default = visible*/
+/*	visibility: hidden;*/
+
+/*	Element true Spacing flase*/
+/*	transform: scale(0);*/
+
+/*	The spacing will also disappear if we use display:none;*/
+/*	Element true Spacing true*/
+	display: none;
+}
+
+.display2{
+	width: 300px;
+	height: 100px;
+
+	background-color: orange;
+	border: 2px solid silver;
+}
+

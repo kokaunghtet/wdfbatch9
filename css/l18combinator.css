@@ -1,0 +1,115 @@
+*{
+	font-family: Arial;
+/*	outline: 1px dashed firebrick;*/
+}
+
+/*Tag to Tag*/
+
+/*div span{
+	color: firebrick;
+}*/
+/*================*/
+
+
+/*Multi Tag to Tag*/
+
+/*div span p{
+	color: royalblue;
+}*/
+/*================*/
+
+/*Tag to Class*/
+
+/*div .address {
+	color: firebrick;
+}*/
+/*================*/
+
+/*Multi-Tag to Class*/
+
+/*div span .address{
+	color: royalblue;
+}*/
+/*================*/
+
+/*Multi-tag to same Class*/
+
+/*div span small.name{
+	color: firebrick;
+}*/
+/*================*/
+
+/*Class to Class */
+/*.bank .currency{
+	color: red;
+}*/
+
+/*.bank .money{
+	color: blue;
+}*/
+
+/*.money .currency{
+	color: green;
+}*/
+/*================*/
+
+/*Multi Classes to Class*/
+
+/*.bank .money .currency{
+	color: red;
+}*/
+/*================*/
+
+/*Class to Tag*/
+/*div.container b{
+	color: royalblue;
+}*/
+/*================*/
+
+/*Class to Multi-Tag*/
+/*.container b span{
+	color: red;
+}*/
+/*================*/
+
+/*Same Class*/
+/*.mobile.us{
+	color: firebrick;
+}*/
+/*================*/
+
+/*Class To Same Class*/
+/*.vehicle .car.us{
+	color: royalblue;
+	font-weight: bolder;
+}*/
+/*================*/
+
+/*Class to Tag by Group Selector*/
+/*.div1 p,b{
+	color: red;
+}*/
+/*================*/
+
+/*Child Selector*/
+/*.div2 > p{
+	color: red;
+}*/
+/*.div2 > .div3 {
+	color: blue;
+}*/
+/*================*/
+
+/*Sibling Selector (2 types)*/
+/*(i) General Sibling Selector (~)*/
+/*.div4 ~ p{
+	color: red;
+}
+
+.div4 ~ i{
+	color: royalblue;
+}*/
+/*(ii) Adjacent Sibling Selector (+) */
+.div8 + b{
+	color: blue;
+}

@@ -1,0 +1,280 @@
+<!-- 21 August -->
+<!-- 22 August -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scope</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 style="text-decoration: underline;">Scope</h2>
+  <script type="text/javascript">
+    // Global Scope
+    // ============
+
+    // const name = "Aung Aung";
+    // name = "Kyaw Kyaw" //error
+    // const name = "Su Su" //error
+    // console.log(name);
+
+    // let city = "Mandalay";
+    // city = "Yangon";
+    // let city = "Bago" //error
+    // console.log(city);
+
+    // var country = "Burma";
+    // country = "Thai";
+    // var country = "Indonesia";
+    // console.log(country);
+
+    // -------------------------------------------------
+    // Loop
+    // ====
+
+    // for (const x = 0; x < 10; x++) {
+    //   console.log(x); //0, error
+    // }
+
+    /*
+    for (let b = 0; b < 10; b++) {
+      console.log(b); //0 to 9
+    }
+    console.log(`Outside value of b is ${b}.`); //b is not defined
+    */
+
+    for (var d = 0; d < 10; d++) {
+      console.log(d); //0 to 9
+    }
+    console.log(`Outside value of d is ${d}.`); //Outside value of d is 10.
+
+    const num1 = 0;
+    let num2 = 0; // =>10
+    var num3 = 0; // =>10
+
+    // for (num1; num1 < 10; num1++) {
+    //   console.log(`Looping num1 value by const: ${num1}`); //0, error
+    // }
+
+    for (num2; num2 < 10; num2++) {
+      console.log(`Looping num2 value by let: ${num2}`); //0 to 9
+    }
+    console.log(`Outside value of num2 is: ${num2}`); //10
+
+    for (num3; num3 < 10; num3++) {
+      console.log(`Looping num3 value by var: ${num3}`); //0 to 9
+    }
+    console.log(`Outside value of num3 is: ${num3}`); //10
+
+    // New Declare
+    // ===========
+    const num4 = 1;
+    let num5 = 2;
+    var num6 = 3;
+
+    // for (const num4 = 0; num4 < 10; num4++) {
+    //   console.log(`Looping num4 value by const: ${num4}`); //0, error
+    // }
+
+    for (let num5 = 0; num5 < 10; num5++) {
+      console.log(`Looping num5 value by let: ${num5}`); //0 to 9
+    }
+    console.log(`Outside value of num5 by let is: ${num5}`); //2
+
+    for (var num6 = 0; num6 < 10; num6++) {
+      console.log(`Looping num6 value by var: ${num6}`); //0 to 9
+    }
+    console.log(`Outside value of num6 by var is: ${num6}`); //10
+    // -------------------------------------------------
+
+    // 22 August
+    // -----------
+    // Object
+    // ======
+
+    const customers = {
+      fullname: "Zayar Kyaw",
+      age: 30,
+      phone: "0912345"
+    }
+
+    console.log(customers);
+    console.log(customers.fullname);
+    console.log(customers.age);
+    console.log(customers.phone);
+
+    customers.fullname = "Zayar Thaw";
+    customers.city = "Mandalay";
+    console.log(customers);
+
+    // Error
+    // customers = {
+    //   citizen: "Burmese"
+    // } 
+
+    let members = {
+      fullname: "Su Su",
+      age: 18,
+      phone: "09456789"
+    }
+    console.log(members);
+    console.log(members.fullname, members.age, members.phone);
+
+    members.city = "Mandalay";
+    members.age = 20;
+    console.log(members);
+
+    members = {
+      fullname: "Su Su Kyaw"
+    }
+    console.log(members);
+
+    var students = {
+      fullname: "Aung Aung",
+      age: 16,
+      phone: "09123456"
+    }
+
+    console.log(students);
+    console.log(students.fullname, students.age, students.phone);
+
+    students.city = "Bago";
+    students.age = 18;
+    console.log(students);
+
+    students = {
+      fullname: "Aung Kyaw Kyaw"
+    }
+    console.log(students);
+    // --------------------------------------------------
+
+    // Array
+    // =====
+
+    const arrcolors = ["Blue", "Red", "Green"];
+    console.log(arrcolors);
+
+    arrcolors[0] = "Skyblue";
+    arrcolors.push("Firebrick");
+    console.log(arrcolors);
+
+    // Error
+    // arrcolors = ["Black", "White", "Grey"];
+    // console.log(arrcolors);
+
+    let arrgirls = ["su su", "chan chan", "soe soe"];
+    console.log(arrgirls);
+
+    arrgirls[0] = "phyu phyu";
+    arrgirls[4] = "hla hla";
+    arrgirls.push("pa pa");
+    console.log(arrgirls);
+
+    arrgirls = ["yu yu", "nu nu", "lu lu"];
+    console.log(arrgirls);
+
+    var arrboys = ["aung aung", "mg mg", "naung naung", "kyaung kyaung"];
+    console.log(arrboys);
+
+    arrboys[0] = "kyaw kyaw";
+    arrboys[4] = "zaw zaw";
+    arrboys.push("naw naw");
+    console.log(arrboys);
+
+    arrboys = ["tun tun", "thura", "yatha"];
+    console.log(arrboys);
+
+    // -------------------------------------------------
+
+    // Function
+    // =========
+
+    const number1 = 10;
+    let number2 = 20;
+    var number3 = 30;
+
+    function funone() {
+      console.log(number1 + number2 + number3);
+    }
+    funone(); //60
+    console.log("--------------------");
+
+    function funtwo() {
+      const x = 100;
+      let y = 200;
+      var z = 300;
+
+      console.log(x + y + z);
+    }
+    funtwo(); //600
+    console.log("--------------------");
+
+    console.log(`Global scope variable number1 by const is ${number1};`);
+    console.log(`Global scope variable number2 by let is ${number2};`);
+    console.log(`Global scope variable number3 by var is ${number3};`);
+
+    // Errors
+    // console.log(`Function scope variable x by const is ${x};`);
+    // console.log(`Function scope variable y by let is ${y};`);
+    // console.log(`Function scope variable z by var is ${z};`);
+    console.log("--------------------");
+
+    const p = 1;
+    let q = 2; // =>20
+    var r = 3; // =>30
+
+    function funthree() {
+      // p = 10; //error
+      q = 20;
+      r = 30;
+
+      //console.log(`From function, p value by const is ${p} `); //error
+      console.log(`From function, q value by let is ${q} `); //20
+      console.log(`From function, r value by var is ${r} `); //30
+    }
+    funthree();
+
+    console.warn(`From outside, p value by const is ${p} `); //1
+    console.warn(`From outside, q value by let is ${q} `); //20
+    console.warn(`From outside, r value by var is ${r} `); //30
+    console.warn("--------------------");
+
+
+    // New Delcare
+    // ===========
+
+    const a = 10;
+    let b = 20;
+    var c = 30;
+
+    function funfour() {
+      const a = 100;
+      let b = 200;
+      var c = 300;
+
+      console.log(`From function, a value by const is ${a} `); //100
+      console.log(`From function, b value by let is ${b} `); //200
+      console.log(`From function, c value by const is ${c} `); //300
+    }
+    funfour();
+
+    console.log(`From outside, a value by const is ${a} `); //10
+    console.log(`From function, b value by const is ${b} `); //20
+    console.log(`From function, c value by const is ${c} `); //30
+    console.log("--------------------");
+
+    // --------------------------------------------------
+
+
+  </script>
+</body>
+
+</html>
+
+<!-- 22FN -->

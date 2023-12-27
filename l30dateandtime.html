@@ -1,0 +1,100 @@
+<!-- 20 July -->
+<!-- 24 July -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date and Time</title>
+  <style type="text/css">
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="footer">
+    <small>Copyright <span id="autoyear">2010</span>. BBC News Web Design.</small>
+  </div>
+
+  <script type="text/javascript">
+    let date = new Date();
+    console.log(date);
+    console.log(new Date);
+
+    // let getDate = new Date().getDate();
+    let getDate = date.getDate();
+    console.log(getDate);
+
+    // let hours = new Date().getHours();
+    let hours = date.getHours();
+    console.log(hours);
+
+    let minutes = date.getMinutes();
+    console.log(minutes);
+
+    let seconds = date.getSeconds();
+    console.log(seconds);
+
+    // 1s = 1000ms
+    // 1 Jan 1970 > up to now 
+    let time = new Date().getTime();
+    console.log(time);
+
+    // Keyword
+    let now = Date.now();
+    console.log(now);
+
+    // array
+    // index = 0 (0 to 11)
+    // length = 1 (12)
+    //     0      1      2      3      4      5       6
+    // ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', ...etc]
+    // let month = new Date().getMonth();
+    let month = date.getMonth();
+    console.log(month); // 6
+
+    //     0      1     2      3      4       5      6 
+    // ['sun', 'mon', 'tue', 'wed', 'thur', 'fri', 'sat']
+    let day = date.getDay();
+    console.log(day);
+
+    let year = date.getFullYear();
+    console.log(year);
+    let utcyear = date.getUTCFullYear();
+    console.log(utcyear);
+
+    document.getElementById('autoyear').innerText = year;
+
+    let birthday = new Date('7-10-2023');
+    birthday = new Date('8-1-2023 11:35:00');
+    birthday = new Date('Aug-1-2023 11:35:00');
+    birthday = new Date('Aug 1 2023 11:35:00');
+    birthday = new Date('August-1-2023 11:35:00');
+    birthday = new Date('August 1 2023 11:35:00');
+    birthday = new Date('8/1/2023 11:35:00');
+
+    console.log(birthday);
+
+    birthday.setMonth(2);
+    birthday.setDate(12);
+    birthday.setFullYear(2008);
+
+    birthday.setHours(15);
+    birthday.setMinutes(30);
+    birthday.setSeconds(50);
+
+    console.log(birthday);
+
+
+
+  </script>
+</body>
+
+</html>
+
+<!-- 20DT -->

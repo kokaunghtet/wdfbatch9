@@ -1,0 +1,25 @@
+* {
+	font-family: arial;
+}
+
+h1, h2, h3, b {
+	color: firebrick;
+}
+
+#s1{
+	color: royalblue;
+}
+
+#s3 {
+	color: slateblue;
+}
+
+.cars {
+	color: forestgreen;
+	font-weight: bolder;
+}
+
+.por {
+	color: royalblue;
+	font-size: 2em;
+}

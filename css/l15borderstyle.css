@@ -1,0 +1,115 @@
+* {
+	font-family: arial;
+/*	outline: 1px dashed red;*/
+}
+
+/*BORDER-STYLE*/
+.bdstyle1 {
+	border-style: solid;
+}
+.bdstyle2 { 
+	border-style: double;
+}
+.bdstyle3 {
+	border-style: dashed;
+}
+.bdstyle4 {
+	border-style: dotted;
+}
+.bdstyle5 {
+	border-style: inset;
+}
+.bdstyle6 {
+	border-style: outset;
+}
+
+
+.bddesign{
+	width: 200px;
+	height: 200px;
+
+	padding:5px;	
+
+/*	border-style: solid;*/
+
+/*							L      R      */
+/*	border-radius: 10px 30px;*/
+/*							T      R      B       L     */
+	border-radius: 10px 20px 30px 40px;
+/*			  stroke/style/color   */
+	border: 3px solid black;
+
+/*	background: firebrick;*/
+	background-color: yellow;
+}
+
+/*LIST-STYLE*/
+ul{
+/*	padding: 0;*/
+
+/*	list-style: none;*/
+/*	list-style-type: none;*/
+/*	list-style-type: circle;*/
+/*	list-style-type: square;*/
+/*	list-style-type: decimal;*/
+	list-style-type: decimal-leading-zero;
+
+/*	border: 1px solid black;*/
+
+}
+li {
+/*	list-style: none;*/
+/*	list-style-type: none;*/
+
+	border: 1px dotted red;
+
+	list-style-position: inside;
+/*	list-style-position: outside;*/   /* outside is default */
+}
+
+/* ================================================= */
+
+/*ATTRIBUTE SELECTOR*/
+input[type="text"] {
+	width: 200px;
+	background-color: royalblue;
+	color: whitesmoke;
+	border-radius: 20px;
+}
+
+input[type="email"] {
+	width: 200px;
+	background-color: firebrick;
+	color: white;
+	border-radius: 20px;
+}
+
+input[type="password"] {
+	width: 200px;
+	background-color: black;
+	color: whitesmoke;
+	border-radius: 20px;
+}
+
+/*BACKGROUND-IMAGE*/
+body {
+	background-image: url("./../img/icon/Avocado.jpg");
+
+	background-repeat: no-repeat;
+
+/*	background-position: center;*/
+/*	background-position: left	;*/
+/*	background-position: right;*/
+	background-position: top;
+/*	background-position: bottom;*/
+
+/*background-position: right top;*/
+/*background-position: left top;*/
+/*background-position: right bottom;*/
+/*background-position: left bottom;*/
+
+/*likes position: fixed*/
+background-attachment: fixed;
+/*background-attachment: scroll;*/
+
+}

@@ -1,0 +1,101 @@
+<!-- 25 July -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datatype</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+    // String
+    const name = "Kyaw Kyaw Htay Lwin";
+
+    console.log(name);
+    console.warn(typeof name);
+    console.error(typeof (name)); // String
+
+    // Number
+    const num = 25.435;
+
+    console.log(num);
+    console.log(typeof num); // number
+
+    // Boolean
+    const hascar = false;
+
+    console.log(hascar);
+    console.log(typeof hascar); //boolean
+
+    //Object (date object)
+    const date = new Date();
+
+    console.log(date);
+    console.log(typeof date); // object
+
+    // Object (javascript object)
+    // key:value
+    const address = {
+      no: "123",
+      street: "Pagoda",
+      city: "Yangon",
+      country: "Myanmar"
+    }
+
+    console.log(address);
+    console.log(typeof address); // object
+
+    // Object (array)
+    const hobbies = ["reading", "cycling", "football"];
+
+    console.log(hobbies);
+    console.log(typeof hobbies); // object
+
+    //undefined
+    let test;
+    console.log(test); // undefined
+    console.log(typeof test); // undefined
+
+    //object (null)
+    const car = null;
+    console.log(car); // null
+    console.log(typeof car); //object
+
+    let phone;
+    console.log(phone); //undefined
+    console.log(typeof phone); //undefined
+    phone = "1234";
+    console.log(phone); //1234
+    console.log(typeof phone); //string
+
+    let carBrand = null;
+    console.log(carBrand); //null
+    console.log(typeof carBrand); //object
+    carBrand = "1234";
+    console.log(carBrand); //string
+    console.log(typeof carBrand); //string
+
+    // Empty String
+    const nickname = " ";
+    console.log(nickname);
+    console.log(typeof nickname); // String
+  </script>
+</body>
+
+</html>
+
+<!-- in CSS -->
+<!-- div{
+  property : value;
+  property : value;
+} -->
+
+<!-- in JavaScript -->
+<!-- name{
+  key : "value",
+  key : "value"
+} -->

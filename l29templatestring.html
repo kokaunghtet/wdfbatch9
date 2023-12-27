@@ -1,0 +1,92 @@
+<!-- 20 July -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template String</title>
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><b>Name</b> : Aung Aung</li>
+    <li><b>Age</b> : 25</li>
+    <li><b>Job</b> : Web Developer</li>
+    <li><b>City</b> : Yangon</li>
+  </ul>
+  <hr>
+
+  <script type="text/javascript">
+    // let fullname; // undefined
+    // var fullname; // undefined
+    // const fullname; //error
+
+    const name = "Honey Nwe Oo";
+    const age = 23;
+    const job = "Model";
+    const city = "Yangon";
+
+    let myListStyle;
+    // console.log(myListStyle); //undefined
+    // myListStyle = "<h1>Hello World</h1>";
+    // myListStyle = '<h1>Hello Global</h1>';
+    // myListStyle = `<h1>Hello Human</h1>`;
+    // console.log(myListStyle);
+
+    // Without Template String
+    // myListStyle =
+    //   "<ul>" +
+    //   "<li>Name : " + name + "</li>" +
+    //   "<li>Age : " + age + "</li>" +
+    //   "<li>Job : " + job + "</li>" +
+    //   "<li>City : " + city + "</li>" +
+    //   "</ul>"
+
+    // With Template String
+    myListStyle = `<ul>
+                    <li><b>Name</b> : ${name}</li>
+                    <li><b>Age</b> : ${age}</li>
+                    <li><b>Job</b> : ${job}</li>
+                    <li><b>City</b> : ${city}</li>
+                  </ul>
+                  <hr>`
+
+    console.log(myListStyle);
+    document.write(myListStyle);
+
+    const name2 = "Mya Hnin Yee Lwin";
+    const age2 = 22;
+    const job2 = "Model";
+    const city2 = "Yangon";
+
+    let myListStyle2;
+    myListStyle2 = `<ul>
+                      <li><b>Name</b> : ${name2}</li>
+                      <li><b>Age</b> : ${age2}</li>
+                      <li><b>Job</b> : ${job2}</li>
+                      <li><b>City</b> : ${city2}</li>
+                    </ul>
+                    <hr>`;
+    console.log(myListStyle2);
+    document.write(myListStyle2);
+
+
+  </script>
+</body>
+
+</html>

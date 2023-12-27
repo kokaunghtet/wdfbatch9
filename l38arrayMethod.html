@@ -1,0 +1,119 @@
+<!-- 31 July -->
+<!-- 1 August -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Method</title>
+</head>
+
+<body>
+  <h2>JS - Array Method</h2>
+
+  <script lang="javascript" type="text/javascript">
+    let arrColors = ['red', 'green', 'blue', 'white', 'black', 'pink'];
+
+    // indexOf(value)
+    console.log(arrColors);
+    console.log(arrColors.length); //6
+    console.log(arrColors[3]); //white
+    console.log(arrColors.indexOf("white")); //3
+    console.log(arrColors.indexOf("red")); //0
+    console.log(arrColors.indexOf("cyan")); //-1
+
+    //Array.isArray(array name)
+    const name = "aung aung";
+    console.log(Array.isArray(name)); //false
+    console.log(Array.isArray(arrColors)); //true
+
+    // join("sign")
+    console.log(arrColors.toString()); //red, green, blue, white, black, pink
+    console.log(arrColors.join()); //red,green,blue,white,black,pink
+    console.log(arrColors.join("-")); //red-green-blue-white-black-pink
+
+    const candies = ['red', 'green', 'blue', 'white', 'black'];
+
+    console.log(candies); //(5) ['red', 'green', 'blue', 'white', 'black']
+    candies[5] = 'pink';
+    candies[1] = 'skyblue';
+
+    console.log(candies); //(6) ['red', 'skyblue', 'blue', 'white', 'black', 'pink']
+
+    //push(value) => add value to end
+    candies.push("orange");
+    candies.push("gold");
+    candies.push("violet", "gray");
+
+    console.log(candies); //(10) ['red', 'skyblue', 'blue', 'white', 'black', 'pink', 'orange', 'gold', 'violet', 'gray']
+
+    // unshift(value) => add value to front
+    candies.unshift("tomato");
+    candies.unshift("green");
+    candies.unshift("silver", "steelblue");
+    console.log(candies); //(14) ['silver', 'steelblue', 'green', 'tomato', 'red', 'skyblue', 'blue', 'white', 'black', 'pink', 'orange', 'gold', 'violet', 'gray']
+
+    //shift() => take off value from front
+    candies.shift();
+    candies.shift();
+    console.log(candies); //(12) ['green', 'tomato', 'red', 'skyblue', 'blue', 'white', 'black', 'pink', 'orange', 'gold', 'violet', 'gray']
+
+    //pop() => take off value from end
+    candies.pop();
+    candies.pop();
+    console.log(candies); //(10) ['green', 'tomato', 'red', 'skyblue', 'blue', 'white', 'black', 'pink', 'orange', 'gold']
+
+
+    //----------------------------------------
+    // 1 August
+
+    // delete; Remove only value 
+    delete candies[1];
+    delete candies[5];
+    console.log(candies); //(10) ['green', empty, 'red', 'skyblue', 'blue', empty, 'black', 'pink', 'orange', 'gold'] 
+    console.log(candies[5]);
+
+    // splice(index, length);
+    //(10) ['green', empty, 'red', 'skyblue', 'blue', empty, 'black', 'pink', 'orange', 'gold'] 
+    const paints = candies.splice(0, 5);
+    console.log(paints); //(5) ['green', empty, 'red', 'skyblue', 'blue']
+
+    // .concat();
+    const arr1 = ["ag ag", "mg mg", "tun tun", "kyaw kyaw"];
+    const arr2 = ["su su", "nu nu", "yu yu", "lu lu"];
+    const arr3 = [10, 20, 30, 40];
+
+    console.log(arr1 + arr2); //ag ag,mg mg,tun tun,kyaw kyawsu su,nu nu,yu yu,lu lu
+    console.log(arr1.concat(arr2)); //(8) ['ag ag', 'mg mg', 'tun tun', 'kyaw kyaw', 'su su', 'nu nu', 'yu yu', 'lu lu']
+    console.log(arr3.concat(arr2)); //(8) [10, 20, 30, 40, 'su su', 'nu nu', 'yu yu', 'lu lu']
+
+    const combinearr = arr1.concat(arr2);
+    console.log(combinearr); //(8) ['ag ag', 'mg mg', 'tun tun', 'kyaw kyaw', 'su su', 'nu nu', 'yu yu', 'lu lu']
+    console.log(combinearr[0]); //ag ag
+    console.log(combinearr[4]); //su su
+
+    // A to Z 
+    console.log(combinearr.sort()); //(8) ['ag ag', 'kyaw kyaw', 'lu lu', 'mg mg', 'nu nu', 'su su', 'tun tun', 'yu yu']
+
+    //Just reverse
+    console.log(combinearr.reverse()); //(8) ['yu yu', 'tun tun', 'su su', 'nu nu', 'mg mg', 'lu lu', 'kyaw kyaw', 'ag ag']
+
+    // sorting the number
+    const arrno = [700, 200, 100, 400, 300, 600, 45, 20, 65, 80, 1, 7, 5, 0, 15];
+    console.log(arrno.sort()); //(15) [0, 1, 100, 15, 20, 200, 300, 400, 45, 5, 600, 65, 7, 700, 80]
+    console.log(arrno.reverse()); //(15) [80, 700, 7, 65, 600, 5, 45, 400, 300, 200, 20, 15, 100, 1, 0]
+
+    console.log(arrno.sort(function (a, b) {
+      return a - b;
+    })); //(15) [0, 1, 5, 7, 15, 20, 45, 65, 80, 100, 200, 300, 400, 600, 700]
+    console.log(arrno.sort(function (a, b) {
+      return b - a;
+    })); //(15) [700, 600, 400, 300, 200, 100, 80, 65, 45, 20, 15, 7, 5, 1, 0]
+  </script>
+</body>
+
+</html>
+
+<!-- 31PP -->

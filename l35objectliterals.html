@@ -1,0 +1,75 @@
+<!-- 26 July -->
+<!-- 27 July -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Literals(JavaScript Object)</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    let students = {
+      firstname: "Honey",
+      middlename: "nway",
+      lastname: "oo",
+      age: 22
+    }
+
+    console.info(students);
+    console.table(students);
+    console.log(typeof (students)); //object
+
+    console.log(students.firstname); //Honey
+    console.log(students.middlename); //nwe
+    console.log(students.lastname); //oo
+    console.log(students.age); //22
+
+    console.log(typeof (students.middlename)); //string
+    console.log(typeof (students.age)); //number
+
+    const persons = {
+      firstname: "Mg",
+      lastname: "Kyaw",
+      age: 42,
+      single: false,
+      email: "mgkyaw@gmail.com",
+
+      address: {
+        street: "62st",
+        city: "Mandalay"
+      },
+
+      hometown: {
+        city: "Yangon"
+      },
+
+      hobbies: ['sleep', 'eat', 'code', 'music', 'sport']
+    };
+
+    console.log(persons);
+    console.table(persons);
+
+    console.log(persons.firstname); //Mg
+    console.log(persons.age); //42
+    console.log(persons.single); //false
+    console.log(persons.address); //{street: '62st', city: 'Mandalay'}
+    console.log(persons.address.street); //62st
+    console.log(persons.address.city); //Mandalay
+    console.log(persons.hometown.city); //Yangon
+
+    console.log(persons.hobbies); //(3) ['sleep', 'eat', 'code']
+    console.log(persons.hobbies[0]); //sleep
+    console.log(persons.hobbies[2]); //code
+    console.log(persons.hobbies.length); //3
+
+    console.log(persons.hobbies[persons.hobbies.length - 1]); //sport
+  </script>
+</body>
+
+</html>
+
+<!-- 26OL -->

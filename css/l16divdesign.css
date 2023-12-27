@@ -1,0 +1,73 @@
+* {
+	font-family: arial;
+}
+
+.firstDiv {
+	width: 200px;
+	height: 200px;
+	color: white;
+
+	background-color: #0A6EBD;
+	
+	font-size: 20px;
+
+}
+
+.secDiv {
+	width: 300px;
+	height: 300px;
+	color: cyan;
+
+	background-image: url(./../img/cover/cover1.jpg);
+	background-repeat: repeat;
+	background-position: center;
+
+	border: 1px solid black;
+}
+
+.thirdDiv {
+	width: 300px;
+	height: 300px;
+	color: white;
+
+	background: radial-gradient(
+		red,
+		blue,
+		green
+	);
+
+	border: 2px solid firebrick;
+}
+
+.fourthDiv{
+	width: 300px;
+	height: 300px;
+	color: #fff;
+
+	background: linear-gradient(
+		45deg,
+		rgb(160, 196, 157),
+		rgb(134, 184, 227)
+	);
+
+	border: 2px solid firebrick;
+}
+
+.fifthDiv {
+	width: 300px;
+	height: 300px;
+	color: #fff;
+
+/*	can only use deg in linear-gradient()*/
+	background-image:linear-gradient(
+		-45deg,
+		rgba(128, 131, 253, 0.5), 
+		rgba(52, 54, 185, 0.5)
+	),
+		url("./../img/cover/bg2.jpg")
+	;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid blue;
+}

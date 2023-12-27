@@ -1,0 +1,67 @@
+*{
+	font-family: Arial;
+}
+
+/*Pseudo Class ( : )=very sensitive */
+/* ========================= */
+
+.div1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 100px;
+	background-color: firebrick;
+	color: white;
+	text-align: center;
+}
+
+/*.div1:first-child{
+	background-color: royalblue;
+}*/
+/*
+.div1:first-of-type{
+	background-color: royalblue;
+}*/
+
+/*.div1:last-child{
+	background-color: darkgreen;
+}*/
+/*
+.div1:last-of-type{
+	background-color: orangered;
+}*/
+
+/*.div1:nth-child(7){
+	background-color: royalblue;
+}*/
+
+/*.div1:nth-of-type(3){
+	background-color: royalblue;
+}*/
+
+/*.div1:nth-child(even){
+	background-color: green;
+}*/
+
+/*.div1:nth-of-type(even){
+	background-color: blue;
+}*/
+
+/*.div1:nth-child(odd){
+	background-color: mediumvioletred;
+}*/
+
+/*.div1:nth-of-type(odd){
+	background-color: blue;
+}*/
+
+/*
+Ordinal Numbers
+=============
+1st
+2nd
+3rd
+4th
+.....
+nth*/

@@ -1,0 +1,52 @@
+*{
+	font-family: Arial;
+}
+
+/*Variables are called "custom properties" in CSS*/
+:root{
+	--rd: red;
+	--oc: orange;
+	--gn: darkgreen;
+	--bl: royalblue;
+	--gdc: linear-gradient(red, orange);
+}
+
+.div1{
+	width: 100px;
+	height: 100px;
+	background-color: var(--rd);
+	color: #fff;
+	float: left;
+}
+
+.div2{
+	width: 200px;
+	height: 200px;
+	background-color: var(--oc);
+	color: #fff;
+	float: left;
+}
+
+.div3{
+	width: 300px;
+	height: 300px;
+	background-color: var(--gn);
+	color: #fff;
+	float: left;
+}
+
+.div4{
+	width: 400px;
+	height: 400px;
+	background-color: var(--bl);
+	color: #fff;
+	float: left;
+}
+
+.div5{
+	width: 500px;
+	height: 500px;
+	background: var(--gdc);
+	color: #fff;
+	float: left;
+}

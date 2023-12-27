@@ -1,0 +1,42 @@
+* {
+	font-family: Arial;
+}
+
+/*pseudo element ( :: ) */
+/* ===============  */
+
+
+/*.paragraph{
+	color: royalblue;
+	font-size: 20px;
+	user-select: none;
+}
+*/
+/*.paragraph::first-line{
+	color: royalblue;
+	font-size: 2em;
+}*/
+
+/*.paragraph::first-letter{
+	color: royalblue;
+	font-size: 2em;
+}*/
+
+/*.paragraph::selection{
+	background-color: firebrick;
+	color: #fff;
+}*/
+
+/*must need "content"*/
+.paragraph::before{
+	content: "ABC";
+	font-size: 50px;
+	color: royalblue;
+}
+
+/*must need "content"*/
+.paragraph::after{
+	content: "efg";
+	font-size: 50px;
+	color: green;
+}

@@ -1,0 +1,101 @@
+<!-- 27 July -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    let arrGirls = new Array('hla hla', 'mya mya', 'su su');
+
+    console.info(arrGirls);
+    console.table(arrGirls);
+    console.log(arrGirls.length);
+
+    const arrBoys = ['mg mg', 'aung aung', 'kyaw kyaw', 'naung naung', 200,];
+
+    console.info(arrBoys);
+    console.table(arrBoys);
+    console.log(arrBoys.length); //5
+    console.log(typeof (arrBoys)); //object
+
+    console.log(arrBoys[0]);
+    console.log(arrBoys[2]);
+    console.log(arrBoys[3]);
+    console.log(typeof (arrBoys[3])); //string
+    console.log(arrBoys[4]);
+    console.log(typeof (arrBoys[4])); //number
+
+    console.log(arrBoys[arrBoys.length - 3]);// kyaw kyaw
+
+    let y = ["hello", 1500, true, undefined, null, new Date(), ['red', 'green'], { firstname: 'Kyaw Kyaw', city: "Yangon" }];
+
+    console.log(y);
+    console.log(y.length);
+    console.log(y[0]);
+    console.log(y[5]);
+    console.log(y[6]);
+    console.log(y[6][1]);
+    console.log(y[7]);
+    console.log(y[7].firstname);
+    console.log(y[7].city);
+
+    let colors = ['red', 'green', 'blue'];
+    colors = ['violet', 'rgba', 'cymk'];
+    console.log(colors);
+
+    let paint = [];
+    console.log(paint);
+
+    paint[0] = 'red';
+    console.log(paint);
+
+    paint[1] = 'blue';
+    paint[1] = 'violet';
+    console.log(paint);
+
+    paint[2] = 'green';
+    paint[3] = 'orange';
+    console.log(paint);
+
+    paint[5] = 'purple';
+    console.log(paint);
+
+    paint[9] = 'cyan';
+    console.log(paint);
+    console.log(paint.length);
+
+    let animals = ['cat', 'dog'];
+    animals[2] = 'owl';
+    animals[5] = 'fish';
+    animals[3] = 'tiger';
+    animals[0] = 'crow';
+    console.log(animals);
+    console.log(animals[0]);
+    console.log(animals[3]);
+    console.log(animals[4]);
+
+    //NESTED ARRAY
+    const nestedArrs = [
+      ['red', 'blue', 'green'],
+      ['cymk', 'rgb', 'hsla'],
+      ['canon', 'epson', ['laser', 'ink']]
+    ];
+
+    console.log(nestedArrs);
+    console.log(nestedArrs[0]);
+    console.log(nestedArrs[0][0]);
+    console.log(nestedArrs[0][2]);
+    console.log(nestedArrs[1][2]);
+    console.log(nestedArrs[2][1]);
+    console.log(nestedArrs[2][2][1]);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!-- 25 July -->
+<!-- 26 July -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Type Conversion</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Type Conversion</h2>
+
+  <script type="text/javascript">
+    // String (character array)
+    let val;
+    console.log(val);
+    console.log(typeof (val)); //undefined
+
+    val = "Aung Aung";
+    console.log(val); //Aung Aung
+    console.log(typeof (val)); //String
+    console.log(val.length); //9
+
+    // Number to String => String();
+    // val = 20
+    // val = '20'
+    // val = "20"
+    // val = `20`
+    val = String(20);
+    console.log(val); //"20"
+    console.log(typeof (val)); //string
+    console.log(val.length); //2
+
+    val = String(20 + 30);
+    console.log(val); //50
+    console.log(typeof (val)); //string
+    console.log(val.length); //2
+
+    // Boolean to String => [ String(); ]
+    // val = true;
+    val = String(true)
+    console.log(val); //true
+    console.log(typeof (val)); //string
+    console.log(val.length); //4
+
+    // Date to String  => [ String(); ]
+    // val = "new Date()"; //new Date()
+    val = String(new Date());
+    console.log(val); //Thu Jul 27 2023 15:07:01 GMT+0630 (Myanmar Time)
+    console.log(typeof (val)); //string
+    console.log(val.length); //48
+
+    // Array to String => [ String(); ] 
+    val = [1, 2, 3, 4]; //[1, 2, 3, 4]
+    console.log(val);
+    val = String([1, 2, 3, 4]);
+    console.log(val); //1,2,3,4
+    console.log(typeof (val)); //string
+    console.log(val.length); //7
+
+    // ---------------------------------------
+
+    // String to Number => [ Number() or + ]
+    val = "20";
+    console.log(val); //20
+    console.log(typeof val); //string
+    console.log(val.length); //2
+
+    // val = Number('20');
+    // val = +"20";
+    val = "20";
+    val = +val;
+    console.log(val); //20
+    console.log(typeof val); //number
+    console.log(val.length); //undefined
+
+    //val = Number("aung aung"); //NaN
+    //val = +"aung aung"; //NaN
+    val = Number([1, 2, 3, 4]);
+    console.log(val); //NaN
+    console.log(typeof val); //number
+    console.log(val.length); //undefined
+
+    val = false;
+    // val = Number(val);
+    val = +val;
+    console.warn(val);
+    console.warn(typeof (val));
+    console.warn(val.length);
+
+    // ---------------------------------------
+
+    val = 10 + "33.34";
+    console.log(val); //1033.34
+    console.log(typeof val); //string
+
+    //  val = 10 + Number("33.34");
+    val = 10 + +"33.34";
+    console.log(val); //43.34
+    console.log(typeof val); //number
+
+    // ---------------------------------------
+    //toFixed() 
+    //(change the datatype to "string" but not in console.log)
+    val = 123.45678
+    console.log(val); //123.45678
+    console.log(val.toFixed(0)); //123
+    console.log(val.toFixed(3)); //123.457
+    console.log(typeof val); //number
+    console.log(val.length); //undefined
+
+    val = 123;
+    console.log(val); //123
+    console.log(val.toFixed(0)); //123
+    console.log(val.toFixed(3)); //123.000
+    console.log(typeof val); //number
+    console.log(val.length); //undefined
+
+    //.toPrecision() 
+    //(change the datatype to "string" but not in console.log)
+    val = 123.456
+    console.log(val.toPrecision(5)); //123.46
+    console.log(typeof (val)); //number
+    console.log(val.length); //undefined
+
+    val = 123
+    console.log(val.toPrecision(6)); //123.000
+    console.log(typeof (val)); //number
+    console.log(val.length); //undefined
+
+    // ---------------------------------------
+    // parseInt() || parsefloat() 
+    // => change the datatype to number
+    val = "50.57";
+    //val = +"50.57"; // 50.57
+    //val = Number("50.57"); //50.57
+    val = parseInt(val);
+    console.log(val); //50
+    console.log(val.toFixed(2)); //50.00
+    console.log(typeof (val)); //number
+    console.log(val.length); //undefined
+
+    val = "50.57";
+    val = parseFloat(val);
+    console.log(val); //50.57
+    console.log(val.toFixed()); //51
+    console.log(typeof (val)); //number
+    console.log(val.length); //undefined
+
+    val = "50.789";
+    val = parseFloat(val);
+    console.log(val); //50.789
+    console.log(typeof val); //number
+    console.log(val.length); //undefined
+    console.log(val.toPrecision(2)); //51
+    console.log(val.toPrecision(4)); //50.79
+
+    // ---------------------------------------
+
+    // Boolean to Number
+
+    //val = Number(true) //1
+    val = Number(false) //0
+    console.log(val); //
+    console.log(val.toFixed(2)); //0.00
+    console.log(typeof (val)); //number
+    console.log(val.length); //undefined
+
+    //---------------------------------------
+    //String to Array
+    val = "aung aung";
+    val = Array.from(val);
+    console.log(val); //(9) ['a', 'u', 'n', 'g', ' ', 'a', 'u', 'n', 'g']
+    console.log(typeof (val)); //object
+    console.log(val.length); //9
+
+    //can not convert number, object and boolean datatype to Array
+
+    //---------------------------------------
+
+    // Prompt box
+    // val = prompt("Enter number");
+    // console.log(val); //50
+    // console.log(typeof val); //string
+    // console.log(val.length); //2
+
+    // val = Number(prompt("Enter Number"));
+    // console.log(val); //50
+    // console.log(typeof val); //number
+    // console.log(val.length); //undefined
+
+    // ---------------------------------------
+
+
+  </script>
+</body>
+
+</html>
+
+<!-- 25TC -->

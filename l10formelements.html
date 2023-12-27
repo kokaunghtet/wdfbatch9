@@ -1,0 +1,154 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Form Elements</title>
+		<style type="text/css">
+			* {
+				font-family: Tahoma;
+			}
+		</style>
+		<link rel="icon" type="image/svg" href="./img/fav/user.svg">
+	</head>
+	<body>
+		<h2 style="color: royalblue;text-decoration: underline;">Form Element</h2>
+
+		<!-- put 'action' and 'method' attri whenever we write form tag -->
+
+		<!-- name is for "php", id is for "js", class is for "css" -->
+
+		<!-- we can only use *for* attribute in label tag -->
+
+		<!-- use autofocus(stand alone attri) in input tag to automatically start with the cursor when open the page -->
+
+		<!-- use autocomplete="off" to disable auto suggesting , can only use in input tag-->
+
+		<!-- use minlength and maxlength to restrict the word count in input tag(type ="text")-->
+
+		<!-- can only use min and max to restrict the word count in input tag(type="number") -->
+
+		<!-- <fieldset></fieldset> | <legend></legend> -->
+
+		<fieldset>
+			<legend>Form Example</legend>
+
+		<!-- without enctype, the file will not go into the database -->
+		<form action="" method="" enctype="multipart/form-data">
+			<label for="fn">First name</label>
+			<input type="text" name="#" id="fn" class="#" placeholder="Enter your first name" autocomplete="off" minlength="3" maxlength="5" autofocus required>
+			<br><br>
+
+			<label for="sn">Second name</label>
+			<input type="text" name="#" id="sn" class="#" placeholder="Enter your second name" autocomplete="off" minlength="3" maxlength="5" required>
+			<br><br>
+			
+			<label for="email">Email</label>
+			<input type="email" name="#" id="email" class="#" placeholder="Enter your email address" required>
+			<br><br>
+			
+			<label for="psw">Password</label>
+			<input type="password" name="#" id="psw" class="#" placeholder="Enter your password" required>
+			<br><br>
+			
+			<label for="cpsw">Confirm password</label>
+			<input type="password" name="#" id="cpsw" class="#" placeholder="Re-enter your password" required>
+			<br><br>
+			
+			<label for="age">Age</label>
+			<input type="number" name="#" id="age" class="#" placeholder="Enter your age" min="0" max="20">
+			<br><br>
+			
+			<!-- The text in the value attribute will go into the database. So if we write long text, it will take more bytes in the database. So try to write just one word. -->
+			<!-- type="radio" -->
+			<label>Select your gender</label><br/>
+			<input type="radio" name="gender" id="gm" class="#" value="m"><label for="gm">Male</label>
+			<input type="radio" name="gender" id="gf" class="#" value="f"><label for="gf">Female</label>
+			<input type="radio" name="gender" id="o" class="#" value="o"><label for="o">Other</label>
+			<br><br>
+
+			<!-- type="radio"| checked -->
+			<label>Select your favourite fruit</label><br/>
+			<input type="radio" name="fruit" id="a" class="#" value="a" checked><label for="a">Apple</label>
+			<input type="radio" name="fruit" id="o" class="#" value="o"><label for="0">Orange</label>
+			<input type="radio" name="fruit" id="l" class="#" value="l"><label for="l">Lemon</label>
+			<br><br>
+
+			<!-- type="checkbox| checked -->
+			<label>Select your fav colour</label><br>
+			<input type="checkbox" name="colour" id="r" class="#" value="0" checked><label for="r">Red</label>
+			<input type="checkbox" name="colour" id="b" class="#" value="1" checked><label for="b">Blue</label>
+			<input type="checkbox" name="colour" id="g" class="#" value="2" ><label for="g">Green</label>
+			<input type="checkbox" name="colour" id="w" class="#" value="3"><label for="w">White</label>
+			<br><br>
+
+			<!-- type="range" -->
+			<label for="horny">How horny are you?</label>
+			<input type="range" name="horny" id="horny" class="#" value="0" min="0" max="10">
+			<br><br>
+
+			<label for="bio">Bio</label>
+			<textarea name="#" id="bio" class="#" rows="1" placeholder="Write something..."></textarea>
+			<br><br>
+
+			<!-- selected, disable -->
+			<label for="country">Citizen</label>
+			<select name="country" id="country" class="" >
+				<option selected disabled>Choose Country</option>
+				<option value="0">Myanmar</option>
+				<option value="1">Japan</option>
+				<option value="2">Thailand</option>
+				<option value="3">Malaysia</option>
+			</select>
+			<br><br>
+
+			<!-- multiple -->
+			<label for="role">Role</label>
+			<select name="role" id="role" class="" multiple>
+				<option value="0">Manager</option>
+				<option value="1">Editor</option>
+				<option value="2">Supervisor</option>
+				<option value="3">Sales</option>
+			</select>
+			<br><br>
+
+			<!-- type='date' -->
+			<label>DOB</label>
+			<input type="date" name="dob" id="" class=""> 
+			<br><br>
+
+			<!-- type="time" -->
+			<label for="bookingtime">Booking Time</label>
+			<input type="time" name="bookingtime" id="bookingtime" id="" class="">	
+			<br><br> 			
+
+			<!-- type="datetime-local" -->
+			<label for="apt">Appointment</label>
+			<input type="datetime-local" name="apt" id="apt" class="">
+			<br><br>
+
+			<!-- type="file"  | capture="user"(to open selfie camera,doesn't work on laptop only in phone[android]) | capture="environment"(to open back camera) -->
+			<label for="nrc">NRC</label>
+			<input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user">
+			<br>
+			<!-- accept='image/*'  | accept='video/*'-->
+			<label for="vid">Video</label>
+			<input type="file" name="vid" id="vid" class="" accept="video/*">
+			<br><br> 
+
+			<label for="color">Choose Color</label>
+			<input type="color" name="color" id="color" class="color">
+			<br><br>
+
+			<input type="hidden" name="hidden" id="hid" class="">
+
+
+			<input type="button" name="#" id="#" class="#" value="Save">
+			<input type="submit" name="#" id="#" class="#">
+			<button name="#" id="#" class="#">Sign up</button>
+			<input type="reset" name="#" id="#" class="#">
+		</form>
+
+		</fieldset>
+	</body>
+	</html>

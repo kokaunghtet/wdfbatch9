@@ -1,0 +1,76 @@
+<!-- 17 August -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      font-size: 1.4rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Arrow Function</h2>
+
+  <script type="text/javascript">
+    // Regular Function
+    // ================
+
+    const regfun1 = function () {
+      const num1 = 100;
+      return num1;
+    }
+    console.log("This is regfun = " + regfun1());
+
+    // Arrow Function
+    // ==============
+
+    const arrfun1 = () => {
+      const num1 = 110;
+      return num1;
+    }
+    console.log("This is arrfun1 = " + arrfun1());
+
+    // Single Parameter Function
+    // =========================
+
+    const arrfun2 = (num1) => {
+      return num1;
+    }
+    console.log(`This is arrfun2 = ${arrfun2(50)}`);
+
+    const arrfun3 = num1 => {
+      return num1;
+    }
+    console.log(`This is arrfun3 = ${arrfun3(30)}`);
+
+    const arrfun4 = num1 => num1 + 50;
+    console.log(`This is arrfun4 = ${arrfun4(30)}`);
+
+    // Multi Parameter Function
+    // ========================
+
+    const multiarrfun1 = (num1, num2) => {
+      const result = num1 + num2;
+      return result;
+    }
+    console.log(multiarrfun1(10, 20));
+
+    const multiarrfun2 = (num1 = 100, num2 = 200) => {
+      const result = num1 + num2;
+      return result;
+    }
+    console.log(multiarrfun2(10));
+
+
+  </script>
+</body>
+
+</html>

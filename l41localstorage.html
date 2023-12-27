@@ -1,0 +1,143 @@
+<!-- 14 August -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Local Storage</h2>
+
+  <script>
+    // Local Storage
+    // -------------
+    // =>Create
+    // =========
+    // localStorage.setItem("name", "Aung Aung");
+    // localStorage.setItem("age", 27);
+    // localStorage.setItem("city", "Yangon");
+
+
+    // =>Update
+    // =========
+    // Method 1
+    // ---------
+    // localStorage.setItem("name", "Kyaw Kyaw");
+
+    // Method 2
+    // --------
+    // localStorage.city = "Mandalay";
+
+    // =>Read
+    // =======
+    // Method 1
+    // --------
+    // const getName = localStorage.name;
+    // const getAge = localStorage.age;
+    // const getCity = localStorage.city;
+    // console.log(getName);
+    // console.log(getAge);
+    // console.log(getCity);
+
+    // Method 2
+    // --------
+    // const name = localStorage.getItem("name");
+    // const age = localStorage.getItem("age");
+    // const city = localStorage.getItem("city");
+    // console.log(name);
+    // console.log(age);
+    // console.log(city);
+
+    // =>Delete
+    // ========
+    // Method 1 (Single Delete)
+    // ------------------------
+    // localStorage.removeItem("age");
+    // localStorage.removeItem("city");
+    // localStorage.removeItem("name");
+
+    // Method 2 (All Delete)
+    // ---------------------
+    // localStorage.clear();
+
+    // ----------------------------------------
+
+    // Session Storage
+    // =>Create
+    // =========
+    // sessionStorage.setItem("name", "Aung Aung");
+    // sessionStorage.setItem("age", 27);
+    // sessionStorage.setItem("city", "Yangon");
+
+
+    // =>Update
+    // ========
+    // Method 1
+    // ---------
+    // localStorage.setItem("name", "Kyaw Kyaw");
+
+    // Method 2
+    // --------
+    // localStorage.city = "Mandalay";
+
+    // =>Read
+    // ======
+    // Method 1
+    // --------
+    // const getName = sessionStorage.name;
+    // const getAge = sessionStorage.age;
+    // const getCity = sessionStorage.city;
+    // console.log(getName);
+    // console.log(getAge);
+    // console.log(getCity);
+
+    // Method 2
+    // --------
+    // const name = sessionStorage.getItem("name");
+    // const age = sessionStorage.getItem("age");
+    // const city = sessionStorage.getItem("city");
+    // console.log(name);
+    // console.log(age);
+    // console.log(city);
+
+    // =>Delete
+    // ======
+    // Method 1 (Single Delete)
+    // ------------------------
+    // sessionStorage.removeItem("age");
+    // sessionStorage.removeItem("city");
+    // sessionStorage.removeItem("name");
+
+    // Method 2 (All Delete)
+    // ---------------------
+    // sessionStorage.clear();
+  </script>
+</body>
+
+</html>
+
+<!-- 
+Local Storage
+=============
+5mb to 10mb(browser dependent)
+all tabs (can share)
+never expire
+
+Session Storage
+===============
+5mb
+private tab only
+on tab close
+
+-->

@@ -1,0 +1,124 @@
+*{
+	font-family: Ubuntu;
+}
+
+:root{
+	--rd: firebrick;
+	--bl: royalblue;
+	--gn: darkgreen;
+	--og: orange;
+}
+
+.div1{
+	margin-top: 50px;
+	width: 100px;
+	height: 80px;
+	background-color: var(--rd);
+/*					rotate(xy);*/
+/*	transform: rotate(90deg);*/
+	transform: rotate(-45deg);
+}
+
+.div2{
+	margin-top: 50px;
+	width: 100px;
+	height: 80px;
+	background-color: var(--bl);
+/*					rotate(xy);*/
+/*	transform: rotate(360deg);*/
+	transform: rotate(1turn);
+/*	transform: rotate(2turn);*/
+}
+
+.div3{
+	margin-top: 50px;
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+/*					rotate(xy);*/
+	transform: rotateX(45deg);
+}
+
+.div4{
+	margin-top: 50px;
+	width: 100px;
+	height: 80px;
+	background-color: var(--rd);
+/*					rotate(xy);*/
+	transform: rotateY(45deg);
+}
+
+.div5{
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	background-color: var(--bl);
+
+/*	default = 1*/
+/*	transform: scale(xy);*/
+/*	transform: scale(1.0);*/
+	transform: scale(0.5);
+}
+
+.div6{
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	background-color: var(--gn);
+
+/*	transform: skew(10deg);*/
+	transform: skew(-20deg);
+}
+
+.div7{
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	background-color: var(--og);
+
+/*	transform: translate(50%);*/
+/*	transform: translate(100%);*/
+/*	transform: translate(200%);*/
+/*	transform: translate(-50%);*/
+
+/*transform: translateX(50%);*/
+/*transform: translateX(100%);*/
+
+/*transform: translateY(50%);*/
+/*transform: translateY(-50%);*/
+/*	transform: translateY(100%);*/
+
+}
+
+.div8{
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	background-color: var(--bl);
+
+/*	transform: translate(50%, -50%);*/
+	transform: translateX(50%) translateY(-50%);
+}
+
+
+
+h1{
+	text-align: center;
+	color: green;
+}
+
+p.text{
+	text-align: center;
+	color: firebrick;
+}
+
+@media(max-width:600px){
+	h1{
+		color: royalblue;
+	}
+
+	p.text{
+		color: green;
+		text-align: justify;
+	}
+}

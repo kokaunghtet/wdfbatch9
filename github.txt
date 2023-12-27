@@ -1,0 +1,47 @@
+git --version || git -v
+--------------------------------------------------------------------
+(do these things just for once in one laptop)
+=============================================
+git config --global user.name "Kaung Htet"
+|=> Check username
+git config --global user.name
+git config user.name
+
+git config --global user.email "kh622962@gmail.com"
+|=> Check useremail
+git config --global user.email
+get config user.email
+
+|=> Connect by SSH(Secure Shell Protocol)(use .pub file ssh key)
+|=> Generate SSH key
+ssh-keygen -t rsa
+
+|=> Check Connection
+ssh -T git@github.com
+--------------------------------------------------------------------
+
+
+|=> Initialize to project folder
+git init
+
+|=> connect porject folder to repository
+git remote add origin git@github.com:kokaunghtet/pttproject.git
+
+|=> Check repository url 
+git remote -v
+
+--------------------------------------------------------------------
+
+git add * (or) git add -A
+
+(update loke yin git status ka nay pyan sa)
+git status
+
+git commit -m "myfirstproject"
+
+git push -u origin master
+
+--------------------------------------------------------------------
+
+(retrive file from github)
+git clone git@github.com:kokaunghtet/pttproject.git

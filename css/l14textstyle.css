@@ -1,0 +1,55 @@
+* {
+	font-family: arial;
+	background-color: #eee;
+}
+
+/*TEXT-ALIGN*/
+.textalign1 {
+	text-align: left;
+}
+.textalign2{
+	text-align: right;
+}
+.textalign3{
+	text-align: center;
+}
+.textalign4{
+	text-align: justify;
+}
+
+/*TEXT-DECORATION*/
+.textdeco1 {
+	text-decoration: underline;
+}
+.textdeco2 {	
+	text-decoration: overline;
+}
+.textdeco3 {
+	text-decoration: line-through;
+}
+.textdeco4 {
+	text-decoration: none;
+}
+
+
+/*LETTER-SPACING & LINE-HEIGHT*/
+.textline1 {
+letter-spacing: 2px;
+}
+.textline2{ 
+	line-height: 20px;
+}
+.textline3{
+	line-height: 2;
+}
+.textline4{
+	line-height: 200%;
+}
+
+/*TEXT-SHADOW*/
+.textshadow {
+	color: #383838;
+/*	H V B C | Horizontal Vertical Blur Color */
+	text-shadow: 2px -2px 2px red, 4px -4px 2px green;
+}
+
